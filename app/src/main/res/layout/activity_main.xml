@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/assignment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ödev 1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı adınızı giriniz."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/assignment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ödev 2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Toplamak istediğiniz sayıları giriniz."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numbers"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/assignment4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ödev 4"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sum"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Faktoriyelini almak istediğiniz sayıyı giriniz."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment4"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/factorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faktoriyelini al"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/assignment5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ödev 5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/factorial"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/stringParameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="String parametreyi giriniz."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment5"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesapla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stringParameter"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
